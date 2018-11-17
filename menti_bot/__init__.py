@@ -119,22 +119,3 @@ class MentiBot():
 	def vote(self, qi: str, qt: str, qans: str):
 		for bot in self.bots:
 			_thread.start_new_thread(bot.default_vote, (qi, qt, qans))
-
-# proxies = {
-# 	"http": "127.0.0.1:8080",
-# 	"https": "127.0.0.1:8080"
-# }
-
-# verify = False
-
-mentid = input("Menti ID: ")
-
-menti = Menti(mentid)
-
-am = int(input("Amount of Bots (1 Thread per bot): "))
-
-bots = [MentiClient(menti) for i in range(am)]
-
-bot = MentiBot(menti, bots)
-bot.identify()
-bot.loop()
