@@ -13,10 +13,10 @@ This was initially intended to be run on linux, but most probably would also wor
 
 ## Usage
 Download the ZIP package and unpack it somewhere
-In terminal/cmd:
+Running the example in terminal/cmd:
 
 > cd /path/to/your/extracted/zip
 >
-> python3 menti.py 
+> python3 bot-example.py
 
 In case that doesn't work try using just "python" instead of "python3"
